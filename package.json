@@ -1,0 +1,25 @@
+{
+  "name": "-effective-system.github.io",
+  "version": "1.0.0",
+  "description": "Сайт по приложениям",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dijen/-effective-system.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dijen/-effective-system.github.io/issues"
+  },
+  "homepage": "https://github.com/Dijen/-effective-system.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
