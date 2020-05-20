@@ -1,17 +1,33 @@
 // () =>-новый синтаксис function
 // done(параметр)-элемент нового синтаксиса при помощи него начинается и завершается function
-const gulp = require('gulp');
+const { src, dest, watch } = require('gulp');
 const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+// плагины
 
 
 // Статический сервер
-gulp.task('browser-sync', () => {
+// локальный сервер(его запуск)bs
+function bs() {
+    serveSass();
     browserSync.init({
         server: {
             baseDir: "./" // находится в основной рабочей папке
         }
     });
-    gulp.watch("./*.html").on('change', browserSync.reload);
-    gulp.watch("./*/**/.sass").on('change', browserSync.reload);
-    gulp.watch("./*/**/.js").on('change', browserSync.reload);
-});
+
+    // Отслеживание файлов
+    watch("./*.html").on('change', browserSync.reload);
+    watch("./sass/**/*.sass", serveSass);
+    watch("./js/*.js").on('change', browserSync.reload);
+};
+
+// Компилировать sass в CSS и автоматически внедрять в браузеры
+function serveSass() {
+    return src("./sass/*.sass")
+        .pipe(sass()) // запускается плагин sass
+        .pipe(dest("./css")) // выплевываются скомпелированные файлы в папку css
+        .pipe(browserSync.stream());
+};
+
+exports.serve = bs;
