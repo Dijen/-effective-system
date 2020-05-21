@@ -10,35 +10,73 @@
 
 <body>
 
-    <header>
-        <h1>Приложения</h1>
+    <header class="header">
+        <h1 class="heading">Приложения</h1>
+        <div class="logo">
+            <img src="" alt="Логотип">
+        </div>
     </header>
     <main>
-        <section class="ava-rooms">
-            <select class="container">
-                <!-- Кнопки -->
-                <button class="container__"></button>
-                <button class="container__"></button>
-                <button class="container__"></button>
-                <button class="container__"></button>
-                <button class="container__"></button>
-                <button class="container__"></button>
-                <button class="container__"></button>
-            </select>
-            <!-- ./container -->
-        </section>
-        <!-- available rooms(свободные номера) -->
-        <!-- ./ava-rooms -->
-        <section class="on check">
+        <div class="container">
+            <section class="block">
+                <hi class="heading">Номера в очереди на проверку</hi>
+                <div class="verification">
+                    <!--verification-проверка(в'эрифэкейшен) -->
 
-        </section>
-        <!-- on check(на проверке) -->
-        <!-- ./on check -->
-        <section class="report">
-
-        </section>
-        <!-- report(отчет) -->
-        <!-- ./report -->
+                </div>
+                <div class="options">
+                    <!-- options-варианты(опш'енс) -->
+                    <ul type="square">
+                        <li id="">
+                            Добавлено
+                        </li>
+                        <li id="">
+                            Готово
+                        </li>
+                        <li id="">
+                            Перенести
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- ./verification -->
+            <section class="room">
+                <select class="ava-rooms">
+              <!-- Кнопки -->
+              <button class="ava-rooms__room"></button>
+              <button class="ava-rooms__room"></button>
+              <button class="ava-rooms__room"></button>
+              <button class="ava-rooms__room"></button>
+              <button class="ava-rooms__room"></button>
+              <button class="ava-rooms__room"></button>
+              <button class="ava-rooms__room"></button>
+          </select>
+                <!-- ./select -->
+            </section>
+            <!-- available(эв'ейлабл) rooms(свободные номера) -->
+            <!-- ./ava-rooms -->
+            <section class="report">
+                <h1 class="report__heading">Отчет</h1>
+                <span class="report__span">Месяца</span>
+                <div class="months">
+                    <select class="january">Январь</select>
+                    <select class="february">Февраль</select>
+                    <select class="march">Март</select>
+                    <select class="april">Апрель</select>
+                    <select class="may">Май</select>
+                    <select class="june">Июнь</select>
+                    <select class="july">Июль</select>
+                    <select class="august">Август</select>
+                    <select class="septembernth">Сентябрь</select>
+                    <select class="october">Октярь</select>
+                    <select class="november">Ноябрь</select>
+                    <select class="december">Декабрь</select>
+                </div>
+            </section>
+            <!-- report(отчет) -->
+            <!-- ./report -->
+        </div>
+        <!-- ./container -->
     </main>
 </body>
 
