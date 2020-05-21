@@ -1,0 +1,9 @@
+.header {
+  margin: 0 auto;
+  background-color: rgba(17, 56, 163, 0.439); }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 950px; }
