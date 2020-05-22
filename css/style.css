@@ -1,31 +1,66 @@
+.block {
+  margin: 0;
+  width: 550px;
+  background-color: rgba(20, 93, 187, 0.432); }
+  .block__heading {
+    text-align: center;
+    font-weight: normal; }
+  .block .verification {
+    height: 200px;
+    border: 1px solid red; }
+  .block .options {
+    display: flex; }
+    .block .options .div {
+      margin-top: 10px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid black; }
+    .block .options__square-yellow {
+      background-color: #ffee05; }
+    .block .options__square-green {
+      background-color: #05ff1a; }
+    .block .options__square-red {
+      background-color: #ff0505; }
+    .block .options ul {
+      margin: 3px 0;
+      padding-left: 10px;
+      line-height: 28px; }
+      .block .options ul li {
+        list-style-type: none; }
+
 .header {
   margin: 0 auto;
   max-height: 100%;
   background: linear-gradient(to top right, #f1e8e8, #335cb4); }
-  .header .heading__attachment {
-    margin-top: 0;
-    text-align: center;
-    font-size: 50px;
-    font-weight: normal;
-    text-shadow: 7px 4px 7px #353232; }
+  .header .section {
+    width: 100%; }
+  .header__logo-image {
+    margin: 10px;
+    height: 50px;
+    box-shadow: 20px 15px 10px rgba(53, 50, 50, 0.322); }
+  .header img:hover {
+    box-shadow: 0 0 10px #63459c; }
+  .header .heading {
+    text-align: center; }
+    .header .heading__attachment {
+      margin-top: 0;
+      text-align: center;
+      font-size: 50px;
+      font-weight: normal;
+      text-shadow: 7px 4px 7px #353232; }
 
-.section {
-  width: 100%; }
-
-.logo__image {
-  margin: 10px;
-  height: 50px;
-  box-shadow: 20px 15px 10px rgba(53, 50, 50, 0.322); }
-
-.logo img:hover {
-  box-shadow: 0 0 10px #63459c; }
+.report {
+  margin: 0;
+  width: 550px; }
 
 .room {
-  margin: 0 auto;
   height: 100vh;
-  background-color: rgba(68, 128, 184, 0.376); }
+  width: 150px;
+  background-color: rgba(68, 128, 184, 0.376);
+  border-left: 2px dashed #0c8eca;
+  border-right: 2px dashed #0c8eca; }
   .room .ava-rooms {
-    width: 200px; }
+    width: 150px; }
 
 .container {
   display: flex;

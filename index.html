@@ -13,8 +13,8 @@
     <header class="header">
         <div class="container">
             <section class="section">
-                <div class="logo">
-                    <img class="logo__image" src="./img/logo/logo.jpg" alt="Логотип">
+                <div class="header__logo">
+                    <img class="header__logo-image" src="./img/logo/logo.jpg" alt="Логотип">
                 </div>
                 <div class="heading">
                     <h1 class="heading__attachment">Приложения</h1>
@@ -28,21 +28,26 @@
     <main>
         <div class="container">
             <section class="block">
-                <h1 class="heading">Номера в очереди на проверку</h1>
+                <h1 class="block__heading">Номера в очереди на проверку</h1>
                 <div class="verification">
                     <!--verification-проверка(в'эрифэкейшен) -->
 
                 </div>
                 <div class="options">
+                    <div class="options__square">
+                        <div class="div options__square-yellow"></div>
+                        <div class="div options__square-green"></div>
+                        <div class="div options__square-red"></div>
+                    </div>
                     <!-- options-варианты(опш'енс) -->
-                    <ul type="square">
-                        <li id="">
+                    <ul>
+                        <li class="options__added" id="">
                             Добавлено
                         </li>
-                        <li id="">
+                        <li class="options__done" id="">
                             Готово
                         </li>
-                        <li id="">
+                        <li class="options__move" id="">
                             Перенести
                         </li>
                     </ul>
