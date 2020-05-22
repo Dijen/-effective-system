@@ -1,7 +1,7 @@
 .block {
   margin: 0;
   width: 550px;
-  background-color: rgba(20, 93, 187, 0.432); }
+  background: linear-gradient(to top right, #b0d1ec, rgba(25, 71, 170, 0.411)); }
   .block__heading {
     text-align: center;
     font-weight: normal; }
@@ -30,8 +30,8 @@
 
 .header {
   margin: 0 auto;
-  max-height: 100%;
-  background: linear-gradient(to top right, #f1e8e8, #335cb4); }
+  max-height: 100vh;
+  background: linear-gradient(to top right, #f1e8e8, rgba(25, 71, 170, 0.301)); }
   .header .section {
     width: 100%; }
   .header__logo-image {
@@ -51,23 +51,40 @@
 
 .report {
   margin: 0;
-  width: 550px; }
+  width: 550px;
+  background: linear-gradient(to top left, #b0d1ec, rgba(25, 71, 170, 0.411)); }
+  .report__heading {
+    text-align: center;
+    font-weight: normal; }
 
 .room {
   height: 100vh;
   width: 150px;
-  background-color: rgba(68, 128, 184, 0.376);
-  border-left: 2px dashed #0c8eca;
-  border-right: 2px dashed #0c8eca; }
+  border-left: 2px dashed #6c7072;
+  border-right: 2px dashed #6c7072; }
   .room .ava-rooms {
+    display: flex;
+    flex-direction: column;
     width: 150px; }
+    .room .ava-rooms__room {
+      flex-basis: 30px;
+      margin: 5px;
+      cursor: pointer; }
+    .room .ava-rooms__room:hover {
+      box-shadow: 1px 5px 9px rgba(14, 178, 219, 0.397);
+      border-radius: 5%; }
+
+body {
+  background: url("../img/body.png") no-repeat center/cover; }
+
+main {
+  margin-top: 30px; }
 
 .container {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  max-width: 1200px;
-  border: 1px solid red; }
+  max-width: 1200px; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

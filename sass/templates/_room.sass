@@ -1,8 +1,16 @@
 .room
   height: 100vh
   width: 150px
-  background-color: rgba(68, 128, 184, 0.376)
-  border-left: 2px dashed rgb(12, 142, 202) 
-  border-right: 2px dashed rgb(12, 142, 202) 
+  border-left: 2px dashed #6c7072 
+  border-right: 2px dashed #6c7072 
   .ava-rooms
+    display: flex
+    flex-direction: column
     width: 150px
+    &__room
+      flex-basis: 30px
+      margin: 5px
+      cursor: pointer
+    &__room:hover
+      box-shadow: 1px 5px 9px rgba(14, 178, 219, 0.397)
+      border-radius: 5%
