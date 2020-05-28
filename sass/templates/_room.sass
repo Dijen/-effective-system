@@ -1,17 +1,19 @@
 .room
-  height: 100vh
   width: 150px
   border-left: 2px dashed #6c7072 
   border-right: 2px dashed #6c7072 
-  .ava-rooms
+  // room__ava-rooms 
+  &__ava-rooms
     display: flex
     flex-direction: column
     width: 150px
-    // .ava-rooms__room
-    &__room
-      flex-basis: 30px
-      margin: 5px
-      cursor: pointer
-    &__room:hover
-      box-shadow: 1px 5px 9px rgba(14, 178, 219, 0.397)
-      border-radius: 5%
+    // room ava-rooms
+    .ava-rooms
+      // ava-rooms__room
+      &__room
+        flex-basis: 30px
+        margin: 5px
+        cursor: pointer
+      &__room:hover
+        box-shadow: 1px 5px 9px rgba(14, 178, 219, 0.397)
+        border-radius: 5%

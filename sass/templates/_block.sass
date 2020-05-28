@@ -1,36 +1,44 @@
 .block
-  margin: 0
   width: 550px
   background: linear-gradient(to top right, #b0d1ec, rgba(25, 71, 170, 0.411))
   // .block__heading
   &__heading
     text-align: center
     font-weight: normal
-  .verification
+  // .block__verification
+  &__verification
     height: 200px
     border: 1px solid red
-  .options
+  // .block__options
+  &__options
     display: flex
-    // .options__square
-    .div
-      margin-top: 10px
-      width: 15px
-      height: 15px
-      border: 1px solid black
-    &__square-yellow
-      // .div options__square-yellow
-      background-color: #ffee05 
-      // .div options__square-green
-    &__square-green
-      background-color: #05ff1a
-      // .div options__square-red 
-    &__square-red
-      background-color: #ff0505 
-    ul
-      margin: 3px 0 
-      padding-left: 10px
-      line-height: 28px
-      li 
+    margin: 10px
+    // .block .square
+    .squares
+      // .squares__square
+      &__square
+        align-self: stretch
+        align-content: space-between
+        margin-top: 10px
+        width: 15px
+        height: 15px
+        border: 1px solid black  
+      // .squares__square_yellow
+      &__square_yellow
+        background-color: #ffee05 
+      // .squares__square_green
+      &__square_green
+        background-color: #05ff1a
+      // .squares__square_red
+      &__square_red
+        background-color: #ff0505 
+     // .block .lists
+    .lists
+      &__list
+        margin: 3px 0 
+        padding-left: 10px
+        line-height: 28px
+        width: 50%
         list-style-type: none
        
     
