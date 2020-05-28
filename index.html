@@ -9,17 +9,15 @@
 </head>
 
 <body>
-
+    <!-- блок "heading" -->
     <header class="header">
+        <!-- вложенный блок "container" в блок "heading" -->
         <div class="container">
+            <!-- вложенный блок "section" в блок "container" и в блок "heading"-->
             <section class="section">
-                <div class="header__logo">
-                    <img class="header__logo-image" src="./img/logo/logo.jpg" alt="Логотип">
-                </div>
-                <div class="heading">
-                    <h1 class="heading__attachment">Приложения</h1>
-                    <!-- attachment-приложение(эт'ачмент) -->
-                </div>
+                <img class="header__logo-image" src="./img/logo/logo.jpg" alt="Логотип">
+                <h1 class="header__attachment">Приложения</h1>
+                <!-- attachment-приложение(эт'ачмент) -->
             </section>
             <!-- ./section -->
         </div>
@@ -29,25 +27,25 @@
         <div class="container">
             <section class="block">
                 <h2 class="block__heading">Номера в очереди на проверку</h2>
-                <div class="verification">
+                <div class="block__verification">
                     <!--verification-проверка(в'эрифэкейшен) -->
 
                 </div>
-                <div class="options">
-                    <div class="options__square">
-                        <div class="div options__square-yellow"></div>
-                        <div class="div options__square-green"></div>
-                        <div class="div options__square-red"></div>
+                <div class="block__options">
+                    <div class="squares">
+                        <div class="squares__square squares__square_yellow"></div>
+                        <div class="squares__square squares__square_green"></div>
+                        <div class="squares__square squares__square_red"></div>
                     </div>
                     <!-- options-варианты(опш'енс) -->
-                    <ul>
-                        <li class="options__added" id="">
+                    <ul class="lists__list">
+                        <li class="list__added" id="">
                             Добавлено
                         </li>
-                        <li class="options__done" id="">
+                        <li class="list__done" id="">
                             Готово
                         </li>
-                        <li class="options__move" id="">
+                        <li class="list__move" id="">
                             Перенести
                         </li>
                     </ul>
@@ -55,7 +53,7 @@
             </section>
             <!-- ./verification -->
             <section class="room">
-                <div class="ava-rooms">
+                <div class="room__ava-rooms ava-rooms">
                     <!-- Кнопки -->
                     <button class="ava-rooms__room">1</button>
                     <button class="ava-rooms__room">2</button>
@@ -74,8 +72,9 @@
                 <h2 class="report__heading">Отчет</h2>
                 <p class="report__input">
                     <input type="search" name="q" placeholder="Поиск по сайту" class="report__search-pr">
-                    <input type="submit" value="Найти">
+                    <input type="submit" value="Найти" class="report__button">
                 </p>
+
                 <h4 class="report__h4">Месяца</h4>
                 <!-- Месяца -->
                 <form action="formdata" method="POST" name="form1" class="months">
@@ -508,6 +507,7 @@
                     </div>
                     <!-- ./Декабрь -->
                 </form>
+                <!-- /.Месяца -->
             </section>
             <!-- ./report -->
         </div>
