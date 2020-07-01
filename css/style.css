@@ -58,6 +58,10 @@
   .report__input {
     display: flex;
     justify-content: flex-end; }
+  .report__button {
+    box-shadow: 1px 5px 3px rgba(117, 217, 241, 0.397);
+    border-radius: 50px;
+    border: none; }
   .report__search-pr {
     order: 1;
     margin: 0 10px; }

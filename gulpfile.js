@@ -3,24 +3,23 @@
 const { src, dest, watch } = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-// плагины
-
 
 // Статический сервер
 // локальный сервер(его запуск)bs
+
 function bs() {
     serveSass();
     browserSync.init({
         server: {
-            baseDir: "./" // находится в основной рабочей папке
+            baseDir: "./"
         }
     });
-
     // Отслеживание файлов
     watch("./*.html").on('change', browserSync.reload);
     watch("./sass/**/*.sass", serveSass);
     watch("./js/*.js").on('change', browserSync.reload);
 };
+
 
 // Компилировать sass в CSS и автоматически внедрять в браузеры
 function serveSass() {

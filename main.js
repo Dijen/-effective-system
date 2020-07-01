@@ -1,1 +1,1 @@
-const seltheme = document.getElementById("selecttheme").value;
+// const seltheme = document.getElementById("selecttheme").value;
