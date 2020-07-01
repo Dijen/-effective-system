@@ -5,30 +5,30 @@
     text-align: center;
     font-weight: normal; }
   .block__verification {
-    height: 200px;
+    height: 100vh;
     border: 1px solid red; }
   .block__options {
     display: flex;
     margin: 10px; }
-    .block__options .squares__square {
-      align-self: stretch;
-      align-content: space-between;
-      margin-top: 10px;
-      width: 15px;
-      height: 15px;
-      border: 1px solid black; }
-    .block__options .squares__square_yellow {
-      background-color: #ffee05; }
-    .block__options .squares__square_green {
-      background-color: #05ff1a; }
-    .block__options .squares__square_red {
-      background-color: #ff0505; }
-    .block__options .lists__list {
-      margin: 3px 0;
-      padding-left: 10px;
-      line-height: 28px;
-      width: 50%;
-      list-style-type: none; }
+  .block .form .squares__square {
+    align-self: stretch;
+    align-content: space-between;
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black; }
+  .block .form .squares__square_yellow {
+    background-color: #ffee05; }
+  .block .form .squares__square_green {
+    background-color: #05ff1a; }
+  .block .form .squares__square_red {
+    background-color: #ff0505; }
+  .block .form .lists__list {
+    margin: 3px 0;
+    padding-left: 10px;
+    line-height: 28px;
+    width: 50%;
+    list-style-type: none; }
 
 .header {
   max-height: 100vh;
