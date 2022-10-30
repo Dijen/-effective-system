@@ -24,6 +24,6 @@
         "npm-audit-helper": "^2.3.20"
     },
     "dependencies": {
-        "browser-sync": "^2.26.7"
+        "browser-sync": "^2.27.10"
     }
 }
